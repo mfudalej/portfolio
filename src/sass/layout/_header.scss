@@ -12,16 +12,6 @@ header {
     
     .social-top {
         display: none;
-        
-        .social-top-list {
-            list-style: none;
-            float: right;
-
-            .social-button {
-                display: inline;
-                margin-right: 20px;
-            }
-        }
     }       
 }
 
@@ -30,13 +20,14 @@ header {
         
         .social-top {
             position: absolute;
-            bottom: 5vh;
+            bottom: 2vh;
             right: 10%;
             display: block;
             
             .social-top-list {
                 list-style: none;
                 float: right;
+                margin: auto 0;
 
                 .social-button {
                     display: inline;

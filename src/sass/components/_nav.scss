@@ -27,10 +27,25 @@
     }
     
     .logo {
-        width: 70px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         display: block;
         cursor: pointer;
+        background-color: #000000;
+        display: none;
+        
+        img {
+            width: 100%;
+        }
+    }
+    
+    .logo-black {
+        width: 50px;
+        height: 50px;
+        display: block;
+        cursor: pointer;
+        margin-top: 5%;
+        margin-left: 5%;
         
         img {
             width: 100%;
@@ -128,13 +143,21 @@
                 }
             }
         }
+        .logo {
+            float: left;
+            height: 5vh;
+            width: 5vh;
+            min-height: 50px;
+            min-width: 50px;
+            display: block;
+            padding-left: 5%;
+            }
+        
+        .logo-black {
+            display: none;
+        }
     }
-    .logo {
-        float: left;
-        width: 15%;
-        height: 100%;
-        padding-left: 5%;
-    }
+    
 }
 
 

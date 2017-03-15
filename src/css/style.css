@@ -139,10 +139,10 @@ a.button-link:hover i {
 .backToTop {
   position: absolute;
   right: 20px;
-  margin-top: -50px; }
+  margin-top: -45px; }
   .backToTop img {
-    width: 50px;
-    height: 50px; }
+    width: 40px;
+    height: 40px; }
 
 .backToTop:hover {
   -webkit-animation: tadam 1s forwards;
@@ -168,11 +168,23 @@ a.button-link:hover i {
     border-bottom: 1px solid #CCC; }
 
 .top-navigation .logo {
-  width: 70px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #000000;
+  display: none; }
   .top-navigation .logo img {
+    width: 100%; }
+
+.top-navigation .logo-black {
+  width: 50px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: 5%; }
+  .top-navigation .logo-black img {
     width: 100%; }
 
 .top-navigation .nav-toggle {
@@ -246,11 +258,16 @@ a.button-link:hover i {
         border: 0; }
       .top-navigation .top-menu li:hover a {
         color: #f5aa95; }
-  .logo {
-    float: left;
-    width: 15%;
-    height: 100%;
-    padding-left: 5%; } }
+    .top-navigation .logo {
+      float: left;
+      height: 5vh;
+      width: 5vh;
+      min-height: 50px;
+      min-width: 50px;
+      display: block;
+      padding-left: 5%; }
+    .top-navigation .logo-black {
+      display: none; } }
 
 @font-face {
   font-family: 'icomoon';
@@ -363,28 +380,31 @@ header {
       font-weight: 400; }
   header .social-top {
     display: none; }
-    header .social-top .social-top-list {
-      list-style: none;
-      float: right; }
-      header .social-top .social-top-list .social-button {
-        display: inline;
-        margin-right: 20px; }
 
 @media screen and (min-height: 600px) {
   header .social-top {
     position: absolute;
-    bottom: 5vh;
+    bottom: 2vh;
     right: 10%;
     display: block; }
     header .social-top .social-top-list {
       list-style: none;
-      float: right; }
+      float: right;
+      margin: auto 0; }
       header .social-top .social-top-list .social-button {
         display: inline;
         margin-right: 20px; } }
 
 .about .container h4 {
-  margin-left: 20%; }
+  margin-left: 20%;
+  padding-top: 15%;
+  margin-bottom: 10%; }
+
+.skills .container .smallTitle {
+  margin-top: 15%; }
+
+.skills .container .bigTitle {
+  margin-bottom: 10%; }
 
 .skills .container .row div {
   width: 50%;
@@ -410,6 +430,12 @@ header {
     transform: scale(1.2);
     cursor: default; } }
 
+.works .smallTitle {
+  margin-top: 15%; }
+
+.works .bigTitle {
+  margin-bottom: 10%; }
+
 .works a {
   text-decoration: 0; }
   .works a img {
@@ -423,7 +449,8 @@ header {
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 3px;
-    color: #000000; }
+    color: #000000;
+    margin-top: 5%; }
   .works a h5 {
     text-align: center;
     font-weight: 600;
@@ -446,23 +473,26 @@ header {
   .works .cuda {
     margin-top: 33%; } }
 
-.contact h6 {
-  text-align: center;
-  max-width: 100%; }
-
-.contact p {
-  text-align: center;
-  font-weight: 800;
-  max-width: 100%; }
-
-.contact .socialBotom {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center; }
-  .contact .socialBotom .socialBotomList {
-    list-style: none;
-    display: inline-block; }
+.contact {
+  margin-bottom: 1%; }
+  .contact .bigTitle {
+    margin-top: 15%;
+    margin-bottom: 5%; }
+  .contact h6 {
+    text-align: center;
+    max-width: 100%; }
+  .contact p {
+    text-align: center;
+    font-weight: 800;
+    max-width: 100%; }
+  .contact .socialBotom {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .contact .socialBotom .socialBotomList {
+      list-style: none;
+      display: inline-block; }
 
 @media screen and (max-width: 650px) {
   .contact .container .row .email, .contact .container .row .telephon {
