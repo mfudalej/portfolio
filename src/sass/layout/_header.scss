@@ -1,0 +1,48 @@
+header {
+    height: 100vh;
+    
+    .home {
+        height: 100%;
+        
+            h4 {
+                color: $color;
+                font-weight: 400;
+            }
+        }
+    
+    .social-top {
+        display: none;
+        
+        .social-top-list {
+            list-style: none;
+            float: right;
+
+            .social-button {
+                display: inline;
+                margin-right: 20px;
+            }
+        }
+    }       
+}
+
+@media screen and (min-height: 600px) {
+    header {
+        
+        .social-top {
+            position: absolute;
+            bottom: 5vh;
+            right: 10%;
+            display: block;
+            
+            .social-top-list {
+                list-style: none;
+                float: right;
+
+                .social-button {
+                    display: inline;
+                    margin-right: 20px;
+                }
+            } 
+        }
+    }
+}

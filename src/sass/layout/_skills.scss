@@ -1,0 +1,48 @@
+.skills {
+    
+    .container {
+        
+        .row {
+            
+            div {
+                width: 50%;
+                font-family: 'icomoon';
+                font-size: 5rem;
+                text-align: center;
+            }
+            
+            
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .skills {
+        
+        .container {
+            
+            .row {
+                
+                div {
+                    width: 22%;
+                    font-family: 'icomoon';
+                    font-size: 10rem;
+                    text-align: center;
+                    -moz-transition: all 0.7s ease;
+                    -webkit-transition: all 0.7s ease;
+                    transition: all 0.7s ease; 
+                }
+                
+                div:hover {
+                    color: $color;
+                    text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
+                    -moz-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+                    cursor:default;
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.contact {
+    
+    h6 {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    p {
+        text-align: center;
+        font-weight: 800;
+        max-width: 100%;
+    }
+    
+    .socialBotom {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        
+        .socialBotomList {
+            list-style: none;
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact {
+        
+        .container {
+            
+            .row {
+                
+                .email, .telephon {
+                    width: 48%;
+                }
+                
+                .social {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact {
+        
+        .container {
+            
+            .row {
+                
+                .email, .telephon {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
