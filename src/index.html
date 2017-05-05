@@ -28,21 +28,21 @@
     <header id="header">
         <nav class="top-navigation">
             <ul class="top-menu" id="site-nav">
-                <li class="current"><a href="#header">Home</a></li>
-                <li><a href="#about" data-scroll-nav="1">O mnie</a></li>
-                <li><a href="#skills" data-scroll-nav="2">Umiejętności</a></li>
-                <li><a href="#works" data-scroll-nav="3">Prace</a></li>
-                <li><a href="#contact" data-scroll-nav="4">Kontakt</a></li>
+                <li class="menu-item"><a href="#header" data-scroll>Home</a></li>
+                <li class="menu-item"><a href="#about"  data-scroll>O mnie</a></li>
+                <li class="menu-item"><a href="#skills"  data-scroll>Umiejętności</a></li>
+                <li class="menu-item"><a href="#works"  data-scroll>Prace</a></li>
+                <li class="menu-item"><a href="#contact"  data-scroll>Kontakt</a></li>
             </ul>
-            <a class="logo" href="index.html"><img class="logo-img" alt="MF Logo" src="images/logo.png"></a>
-            <a class="logo-black" href="index.html"><img class="logo-img" alt="MF Logo" src="images/logo-black.png"></a>
+            <a class="logo" href="index.html" data-scroll><img class="logo-img" alt="MF Logo" src="images/logo.png"></a>
+            <a class="logo-black" href="index.html" data-scroll><img class="logo-img" alt="MF Logo" src="images/logo-black.png"></a>
         </nav>
   
         <div id="home" class="container home" data-scroll-index='0'>
             <div class="row">
                 <div class="twelve columns" style="margin-top: 25%">
                     <h4>Witaj! Nazywam się Mateusz Fudalej.</h4>
-                    <h3>Jestem początkującym frond-end developerem, <br>żyjącym na codzień w Warszawie.</h3>
+                    <h3>Jestem początkującym frond-end developerem,<br><span class="typed"></span></h3>
                     <a id="main-nav" class="button-link" href="#about">
                         <span>Czytaj więcej</span>
                         <i class="arrow"></i>
@@ -61,7 +61,7 @@
         </div>
      </header>
     <main>
-<!--about-->
+<!-- about    -->
          <section class="about" id="about">
              <div class="container">
                  <h4>O mnie słów kilka. O mnie słów kilka. O mnie słów kilka. O mnie słów kilka. O mnie słów kilka.</h4>
@@ -73,7 +73,7 @@
                 </div>
              </div>
          </section>
-<!--skills      -->
+<!-- skills      -->
          <section class="skills" id="skills">
              <div class="container">
                  <h5 class="smallTitle">Moje umiejętności.</h5>
@@ -96,7 +96,7 @@
                  </div>
              </div>
          </section>
-<!--works       -->
+<!-- works       -->
          <section class="works" id="works">
              <div class="container">
                 <h5 class="smallTitle">Wybrane prace</h5>
@@ -119,7 +119,7 @@
                 </div>                             
              </div>
          </section>
-<!--contact      -->
+<!-- contact      -->
          <section class="contact" id="contact">
              <div class="container">
                 <div class="row">
@@ -155,18 +155,24 @@
         <div class="container">
             <div class="row">
                 <p>©2017 mateuszfudalej.pl</p>
-                <a class="backToTop" href="#header"><img src="images/go_top.png" alt="Back Top"></a>
+                <a class="backToTop" href="#header" data-scroll><img src="images/go_top.png" alt="Back Top"></a>
             </div>
         </div>
     </footer>
 <!-- End Document -->
 
-<!--JS-->
+<!-- JS -->
 <script src="js/responsive-nav.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/scripts.js"></script>
+<!--<script src="js/fixed-responsive-nav.js"></script>-->
 <script>
     var navigation = responsiveNav("#site-nav")
-</script> 
-<!--<script src="js/scripts.js"></script>-->
+</script>
+<script>
+    smoothScroll.init();
+</script>
 
 </body>
 </html>

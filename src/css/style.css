@@ -361,10 +361,41 @@ header {
     header .home h4 {
       color: #f5aa95;
       font-weight: 400; }
+    header .home h3 {
+      min-height: 200px; }
+      header .home h3 .typed-cursor {
+        opacity: 1;
+        font-weight: 100;
+        -webkit-animation: blink 0.7s infinite;
+                animation: blink 0.7s infinite; }
+
+@-keyframes blink {
+  header .home h3 0% {
+    opacity: 1; }
+  header .home h3 50% {
+    opacity: 0; }
+  header .home h3 100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      header .home h3 .typed-fade-out {
+        opacity: 0;
+        -webkit-animation: 0;
+                animation: 0;
+        -webkit-transition: opacity .25s;
+        transition: opacity .25s; }
   header .social-top {
     display: none; }
 
 @media screen and (min-height: 600px) {
+  header .home .h3 {
+    min-height: 92px; }
   header .social-top {
     position: absolute;
     bottom: 2vh;
