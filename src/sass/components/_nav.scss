@@ -4,7 +4,6 @@
         list-style: none;
         text-align: center;
         padding: 0;
-        width: 100%;
         
         
         li {
@@ -102,6 +101,9 @@
         background-color: #000000;
         height: 5vh;
         min-height: 50px;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
         
         .top-menu {
             width: 75%;
@@ -129,6 +131,7 @@
 //                    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 //                    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 }
+
             }
             
             li:last-child {
@@ -141,8 +144,11 @@
                 a {
                     color: $color;
                 }
+                
             }
+            
         }
+        
         .logo {
             float: left;
             height: 5vh;
